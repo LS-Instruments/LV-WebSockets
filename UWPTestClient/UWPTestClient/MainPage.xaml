@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="UWPTestClient.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPTestClient"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0">WebSocketUri</TextBlock>
+        <TextBox x:Name="WebSocketUri" Grid.Row="0" Grid.Column="1" Text="ws://localhost:6123/resource/name"></TextBox>
+        <Button x:Name="ConnectButton" Grid.Row="0" Grid.Column="2" 
+                IsEnabled="{Binding IsNotConnected}" 
+                Click="ConnectButton_OnClick">Connect</Button>
+        <Button x:Name="CloseConnectionButton" Grid.Row="0" Grid.Column="3" 
+                IsEnabled="{Binding Connected}" 
+                Click="CloseConnectionButton_OnClick">Disconnect</Button>
+
+        <TextBlock Grid.Row="1" Grid.Column="0">Message</TextBlock>
+        <TextBox x:Name="SendText" Grid.Row="1" Grid.Column="1"
+                 KeyDown="SendText_OnKeyDown"></TextBox>
+        <Button x:Name="SendMessageButton" Grid.Row="1" Grid.Column="2" 
+                IsEnabled="{Binding Connected}" 
+                Click="SendMessageButton_OnClick">Send</Button>
+
+        <TextBlock Grid.Row="2" Grid.Column="0">Log</TextBlock>
+        <TextBox x:Name="TextBoxChat" Grid.Row="2" Grid.Column="1" AcceptsReturn="True"></TextBox>
+
+    </Grid>
+</Page>
