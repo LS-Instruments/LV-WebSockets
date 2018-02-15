@@ -70,5 +70,6 @@ http://www.mediamongrels.com
 		<Item Name="Parse URI.vi" Type="VI" URL="../Parse URI.vi"/>
 		<Item Name="SendDataFrame.vi" Type="VI" URL="../SendDataFrame.vi"/>
 		<Item Name="DecodeCloseReason.vi" Type="VI" URL="../DecodeCloseReason.vi"/>
+		<Item Name="Create URI.vi" Type="VI" URL="../Create URI.vi"/>
 	</Item>
 </Library>
