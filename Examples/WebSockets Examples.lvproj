@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="16008000">
+<Project Type="Project" LVVersion="17008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str">This project contains examples for using the WebSockets API provided by MediaMongrels Ltd</Property>
 	<Item Name="My Computer" Type="My Computer">
@@ -16,6 +16,7 @@
 			<Item Name="Test Client" Type="Folder" URL="../Test Client">
 				<Property Name="NI.DISK" Type="Bool">true</Property>
 			</Item>
+			<Item Name="LV WebSockets.lvlib" Type="Library" URL="../../LV WebSockets.lvlib"/>
 			<Item Name="SingleConnection.vi" Type="VI" URL="../Test Server/SingleConnection.vi"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -60,7 +61,6 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="WebSockets.lvlib" Type="Library" URL="../../WebSockets.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
