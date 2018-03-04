@@ -16,9 +16,9 @@
 			<Item Name="Test Client" Type="Folder" URL="../Test Client">
 				<Property Name="NI.DISK" Type="Bool">true</Property>
 			</Item>
-			<Item Name="LV WebSockets.lvlib" Type="Library" URL="../../LV WebSockets.lvlib"/>
 			<Item Name="SingleConnection.vi" Type="VI" URL="../Test Server/SingleConnection.vi"/>
 		</Item>
+		<Item Name="LV WebSockets.lvlib" Type="Library" URL="../../LV WebSockets.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
