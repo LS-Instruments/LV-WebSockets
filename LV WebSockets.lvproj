@@ -21,12 +21,17 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Single Connection" Type="Folder">
+		<Item Name="Examples" Type="Folder">
 			<Item Name="Test Client" Type="Folder" URL="../Examples/Test Client">
 				<Property Name="NI.DISK" Type="Bool">true</Property>
 			</Item>
-			<Item Name="SingleConnection.vi" Type="VI" URL="../Examples/Test Server/SingleConnection.vi"/>
+			<Item Name="Server.vi" Type="VI" URL="../Examples/Test Server/Server.vi"/>
 		</Item>
+		<Item Name="VIPM" Type="Folder">
+			<Item Name="LV-WebSockets.vipb" Type="Document" URL="../LV-WebSockets.vipb"/>
+			<Item Name="LV-WebSockets.vipc" Type="Document" URL="../LV-WebSockets.vipc"/>
+		</Item>
+		<Item Name="LV WebSockets Release Notes.txt" Type="Document" URL="../LV WebSockets Release Notes.txt"/>
 		<Item Name="LV WebSockets.lvlib" Type="Library" URL="../LV WebSockets.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -65,6 +70,7 @@
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
+				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
