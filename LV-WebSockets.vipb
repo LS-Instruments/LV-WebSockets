@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-14 14:09:30" Modified_Date="2023-10-21 16:00:42" Creator="AndreaVaccaro(LSInst" Comments="" ID="c6258754742a1e6d19900de53a518ba0">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-14 14:09:30" Modified_Date="2023-10-22 11:25:09" Creator="AndreaVaccaro(LSInst" Comments="" ID="ced34550fb0e8f783f37cee3390a9eee">
   <Library_General_Settings>
     <Package_File_Name>LS_Instruments_AG_lib_LV_WebSockets</Package_File_Name>
-    <Library_Version>1.7.0.9</Library_Version>
+    <Library_Version>1.7.0.11</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>vipm packages</Library_Output_Folder>
@@ -30,13 +30,17 @@
       <One_Line_Description_Summary>A library implementing the WebSocket protocol including support for resource names</One_Line_Description_Summary>
       <Description>This library is a fork of v1.6.0.22 of the WebSokets library by MediaMongrels Ltd.
 
+&lt;b&gt;The main new feature is the introduction of support for resource names as per RFC 6455 and better adherence to the RFC standard.
+
+As far as the author knows, this is the only LabVIEW WebSocket library supporting resource names. &lt;/b&gt;
+
 The library leverages on the TCP VIs for establishing a WebSocket connection and communicating through it. It allows, for example, a web browser to communicate with a LabVIEW application acting as a WebSocket server.
 
-It contains VIs for performing websockets handshaking, reading/writing data and closing the connection. The API allows for you to write code to act as both a WebSocket server, and as a client.
+It contains VIs for performing WebSocket handshaking, reading/writing data and closing the connection. The API allows for you to write code to act as both a WebSocket server, and as a client.
 
 &lt;b&gt;Since the fork the following changes have been implemented:&lt;/b&gt;
 
-* Fixed a bugs in client handshake code:
+* Fixed bugs in client handshake code:
 * Refactored  the client/server handshake code
 * added support for WebSocket resources names as per RFC 6455
 * Now the server handshake checks if a resource is available as of the input array of resource and it answers with a 404 Not Found HTTP response according to the RFC 6455. Server handshake similarly handles the malformed client handshake by answering with a 400 Bad Request HTTP response according to RFC 6455.  We added a "ProcessHandshakeResponse.vi" that fully checks the server response as of RFC 6455, before there was only a partial check obtained by reusing "the ProcessHandshakeRequest.vi"server code.
@@ -53,7 +57,7 @@ It contains VIs for performing websockets handshaking, reading/writing data and 
       <URL>https://github.com/LS-Instruments/LV-WebSockets</URL>
       <Release_Notes>- Forked form v1.6.0.22 of the WebSockets package by MediaMongrels Ltd
 - Since the fork the following changes have been implemented
-	* Fixed a bugs in client handshake code:
+	* Fixed bugs in client handshake code:
 		1. the client needs to send an HTTP full URI and not a WS URI when we decide to put a full URI and not just the a path in the request.
 		2. The regex in the "Parse URI.vi" method has been improved for the dummy resource name "/"
 	* Refactored  the client/server handshake code
@@ -440,7 +444,7 @@ It contains VIs for performing websockets handshaking, reading/writing data and 
         <Path>Open Examples Folder.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>EF2B3A5A047FA33AD1E62838DAFF4462</GUID>
+      <GUID>3D2F643D983C67AE2CDCA76A24E7E7A5</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -531,7 +535,7 @@ It contains VIs for performing websockets handshaking, reading/writing data and 
         <Path>StatusCode.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>9A454E9998840D3A94ABF98E1083A626</GUID>
+      <GUID>B67B0E0E44C732E20ABBE61A3DE71205</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
