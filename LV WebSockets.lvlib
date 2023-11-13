@@ -3,8 +3,11 @@
 	<Property Name="NI.Lib.Description" Type="Str">Library for communicating with a web-browser via the WebSockets protocol. This allows for low-latency asynchronous TCP/IP-like communications.
 
 ---------------------------------------
-(c) Sam Sharp 2014 - MediaMongrels
+(c) Sam Sharp 2016 - MediaMongrels
 http://www.mediamongrels.com
+---------------------------------------
+(c) Andrea Vaccaro 2016 - LS Instruments AG
+http://lsinstruments.ch
 ---------------------------------------</Property>
 	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*!!!!*Q(C=\&gt;5R4C."%)8B:U3QY6J=!$EDLCMY)!&gt;@I;\A&amp;%TCE,3ST6&lt;S&amp;8S&amp;OI+PY#M-@\@,RA+"6Q,%"MR1Y`(L[?\0-[V"[NMP[6T$K?X[X?U@WY&gt;?Q`\E_D$O[`&lt;&gt;`H&lt;`X=@QOHV`/%K?WY@BO(VYW@_DP__&gt;^B/&lt;@L;@\8OXOZ/,^-P8\%DN251F&amp;:24JD&lt;6E/2*HO2*HO2*(O2"(O2"(O2"\O2/\O2/\O2/&lt;O2'&lt;O2'&lt;O2'XH&gt;SE9N=Z*#3S:/*EE'4!:+,I3AZ**\%EXA3$V_6?"*0YEE]C9&gt;,F(A34_**0)G(&lt;EI]C3@R**\%QV"&gt;EHUHRZ.Y'&amp;["*`!%HM!4?*B3A3=!"*-&amp;!Q?$Q&amp;$1'*Q%HM!4?$B6Y!E]A3@Q""[;&amp;8A#4_!*0)'(,PWO2.?UH2Q0Q]DR/"\(YXA=$U0,]4A?R_.Y(!`4S@%Y(A@B4/A-$E&amp;/*_=#ZYPD=4R]S0%Y(M@D?"Q04@U*?&lt;]T4&gt;.W=DS'R`!9(M.D?"B#BM@Q'"\$9XA96I&lt;(]"A?QW.YG%K'R`!9(A.C4-LU-A9T/BI8'9(BY;_P&amp;ON0+&lt;L%_C\6YF5N3N6C5SUCV?*10846QV1^*.8.6^V5V=V3X146DV/B62D6*+L/\5*N/7[I.&lt;7CFN3=GF&amp;4;E+.7^&gt;0PH#\X7KTW7C^8GOV7GGZ8'I_HWMWGWE[H7ISG7A](B^?!Z@MBR@#\LVURXGLR&gt;8&amp;`?,KFM_&lt;U?,XH`O(R\_D@6OL,`J@_B_]'X7GYX'Z2U`T@*E3!!!!!!</Property>
@@ -19,6 +22,8 @@ http://www.mediamongrels.com
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 		<Item Name="Base64" Type="Folder">
 			<Item Name="Util Convert to Base64.vi" Type="VI" URL="../Base64/Util Convert to Base64.vi"/>
+			<Item Name="Base64 Fast Decode 2012 NIVerified.vi" Type="VI" URL="../Base64/Base64 Fast Decode 2012 NIVerified.vi"/>
+			<Item Name="Base64 Fast Encode 2012 NIVerified.vi" Type="VI" URL="../Base64/Base64 Fast Encode 2012 NIVerified.vi"/>
 		</Item>
 		<Item Name="Handshaking" Type="Folder">
 			<Item Name="HandshakeResponse.vi" Type="VI" URL="../HandshakeResponse.vi"/>
@@ -50,6 +55,7 @@ http://www.mediamongrels.com
 			<Item Name="SHA-1.vi" Type="VI" URL="../SHA-1/SHA-1.vi"/>
 		</Item>
 		<Item Name="ValudateHTTPURI.vi" Type="VI" URL="../ValudateHTTPURI.vi"/>
+		<Item Name="Generate Sec-WebSocket-Key.vi" Type="VI" URL="../Generate Sec-WebSocket-Key.vi"/>
 	</Item>
 	<Item Name="Controls" Type="Folder">
 		<Item Name="Headers.ctl" Type="VI" URL="../Headers.ctl"/>
