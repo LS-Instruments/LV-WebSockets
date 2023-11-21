@@ -64,6 +64,10 @@ http://lsinstruments.ch
 		<Item Name="Data Format.ctl" Type="VI" URL="../Data Format.ctl"/>
 	</Item>
 	<Item Name="API" Type="Folder">
+		<Item Name="TLS" Type="Folder">
+			<Item Name="Secure Server Connection.vi" Type="VI" URL="../TLS/Secure Server Connection.vi"/>
+			<Item Name="Secure Client Connection.vi" Type="VI" URL="../TLS/Secure Client Connection.vi"/>
+		</Item>
 		<Item Name="DoHandshake.vi" Type="VI" URL="../DoHandshake.vi"/>
 		<Item Name="InitiateClientHandshake.vi" Type="VI" URL="../InitiateClientHandshake.vi"/>
 		<Item Name="Read.vi" Type="VI" URL="../Read.vi"/>

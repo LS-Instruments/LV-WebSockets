@@ -22,6 +22,9 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Examples" Type="Folder">
+			<Item Name="Certificates" Type="Folder" URL="../Examples/Certificates">
+				<Property Name="NI.DISK" Type="Bool">true</Property>
+			</Item>
 			<Item Name="Test Client" Type="Folder" URL="../Examples/Test Client">
 				<Property Name="NI.DISK" Type="Bool">true</Property>
 			</Item>

@@ -13,8 +13,17 @@ The library leverages on the TCP VIs for establishing a WebSocket connection and
 
 It contains VIs for performing WebSockets handshaking, reading/writing data and closing the connection. The API allows for you to write code to act as both a WebSocket server, and as a client.
 
-**Since the fork the following changes have been implemented:**
+## Changelog since the initial fork:
+### v1.8.0
+- Improved error handling in client handshake
+- Implemented URI parsing for wss/https URIs (#4)
+- Implemented support for Secure WebSocket  (Closes #4)
+- Up to now, the Sec-WebSocket-Key was a value hard-coded in the code. Implemented the generation of a random 16 bytes string and then its encoding to a 24 bytes Base64 string as specified in the RFC 6455 . This will improve the security of the implementation (Closes #1).
+- Minor improvement to the example code
+- The previous implementation of the Base64 encoding was relatively slow and inefficient. We have replaced it with a highly optimized pure LabVIEW implementations available here https://forums.ni.com/t5/Example-Code/Fast-Base64-Encoder-Decoder-using-LabVIEW/ta-p/3503281 (Closes #3).
 
+### v1.7.0
+- As per RFC 2616 (referred in RFC 6455) headers should be matched in a case insensitive manner. This is was not done and caused a problem with certain WebSocket servers. We have implemented a case insensitive header matching (Fixes #2).
 * Added support for WebSocket resources names as per RFC 6455
 * Fixed bugs in client handshake code
 * Refactored  the client/server handshake code

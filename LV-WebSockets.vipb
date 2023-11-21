@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-14 14:09:30" Modified_Date="2023-11-13 21:53:37" Creator="AndreaVaccaro(LSInst" Comments="" ID="bbe549c0674e30e348cc5520ca7594fd">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-14 14:09:30" Modified_Date="2023-11-22 00:05:47" Creator="AndreaVaccaro(LSInst" Comments="" ID="88353afcb78f6c8d3eb2b0c9e94e9bdf">
   <Library_General_Settings>
     <Package_File_Name>LS_Instruments_AG_lib_LV_WebSockets</Package_File_Name>
-    <Library_Version>1.7.1.4</Library_Version>
+    <Library_Version>1.8.0.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>vipm packages</Library_Output_Folder>
@@ -55,7 +55,10 @@ It contains VIs for performing WebSocket handshaking, reading/writing data and c
       <Copyright/>
       <Packager>Andrea Vaccaro</Packager>
       <URL>https://github.com/LS-Instruments/LV-WebSockets</URL>
-      <Release_Notes>- Up to now, the Sec-WebSocket-Key was a value hard-coded in the code. Implemented the generation of a random 16 bytes string and then its encoding to a 24 bytes Base64 string as specified in the RFC 6455 . This will improve the security of the implementation
+      <Release_Notes>- Improved error handling in client handshake
+- Implemented URI parsing for wss/https URIs
+- Implemented support for Secure WebSocket
+- Up to now, the Sec-WebSocket-Key was a value hard-coded in the code. Implemented the generation of a random 16 bytes string and then its encoding to a 24 bytes Base64 string as specified in the RFC 6455 . This will improve the security of the implementation
 - Minor improvement to the example code
 - The previous implementation of the Base64 encoding was relatively slow and inefficient. We have replaced it with a highly optimized pure LabVIEW implementations available here https://forums.ni.com/t5/Example-Code/Fast-Base64-Encoder-Decoder-using-LabVIEW/ta-p/3503281.
 - As per RFC 2616 (referred in RFC 6455) headers should be matched in a case insensitive manner. This is was not done and caused a problem with certain WebSocket servers. We have implemented a case insensitive header matching.</Release_Notes>
@@ -431,7 +434,7 @@ It contains VIs for performing WebSocket handshaking, reading/writing data and c
         <Path>Open Examples Folder.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0A64E386A8986B5422D7C85F60FF9DAE</GUID>
+      <GUID>5160E7A7B83C9B89290FA8B93457C6B7</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -522,7 +525,7 @@ It contains VIs for performing WebSocket handshaking, reading/writing data and c
         <Path>StatusCode.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>390A131612D1A10B6A2A7A29E848540B</GUID>
+      <GUID>0B8B115F148C4337E75247CC95F1B45E</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

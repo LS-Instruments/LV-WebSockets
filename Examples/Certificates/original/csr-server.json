@@ -1,0 +1,6 @@
+{
+    "CN": "lvtls.example",
+    "hosts": ["lvtls.example"],
+    "key": {"algo": "ecdsa", "size": 256},
+    "names": []
+}
