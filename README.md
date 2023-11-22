@@ -18,6 +18,7 @@ It contains VIs for performing WebSockets handshaking, reading/writing data and 
 - Improved error handling in client handshake
 - Implemented URI parsing for wss/https URIs (#4)
 - Implemented support for Secure WebSocket  (Closes #4)
+- Now if the client/server handshaking fails the TCP connection will be closed (Closes #5)
 - Up to now, the Sec-WebSocket-Key was a value hard-coded in the code. Implemented the generation of a random 16 bytes string and then its encoding to a 24 bytes Base64 string as specified in the RFC 6455 . This will improve the security of the implementation (Closes #1).
 - Minor improvement to the example code
 - The previous implementation of the Base64 encoding was relatively slow and inefficient. We have replaced it with a highly optimized pure LabVIEW implementations available here https://forums.ni.com/t5/Example-Code/Fast-Base64-Encoder-Decoder-using-LabVIEW/ta-p/3503281 (Closes #3).
