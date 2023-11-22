@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-14 14:09:30" Modified_Date="2023-11-22 15:40:07" Creator="AndreaVaccaro(LSInst" Comments="" ID="87f3f010a04bc327bdf2a351a87bcc2a">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-14 14:09:30" Modified_Date="2023-11-22 17:44:11" Creator="AndreaVaccaro(LSInst" Comments="" ID="a4e540a13871c17db02166e8846f631b">
   <Library_General_Settings>
     <Package_File_Name>LS_Instruments_AG_lib_LV_WebSockets</Package_File_Name>
-    <Library_Version>1.8.0.5</Library_Version>
+    <Library_Version>1.8.0.6</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>vipm packages</Library_Output_Folder>
@@ -435,7 +435,7 @@ It contains VIs for performing WebSocket handshaking, reading/writing data and c
         <Path>Open Examples Folder.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D0C8F15C0731BB162684189999C3E6BF</GUID>
+      <GUID>98536D8A7F1BD574CDD24452FAD3B661</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -526,7 +526,7 @@ It contains VIs for performing WebSocket handshaking, reading/writing data and c
         <Path>StatusCode.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E9A512545820861342266DC4A775C54D</GUID>
+      <GUID>75C253D27B922AEEF2ECA4E4257F8D5F</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
